@@ -1,120 +1,160 @@
-# NutriPlan - JavaScript Starter Project
+🥗 NutriPlan
+Food, Nutrition & Fitness Planner (JavaScript Project)
 
-Welcome to the NutriPlan starter project! The design is fully complete - your task is to bring it to life with JavaScript.
+NutriPlan is a modern web application designed to help users explore meals, track daily nutrition, and build healthier eating habits.
+This project focuses on JavaScript fundamentals, API integration, and state-driven UI rendering, using a fully prepared UI design.
 
-## 🎯 Project Overview
+🚀 Project Purpose
 
-NutriPlan is a Food, Nutrition & Fitness Planner web application. The HTML and CSS are ready - you need to implement the JavaScript functionality.
+The main goal of NutriPlan is to practice and demonstrate:
 
-## 📁 Project Structure
+Working with real-world REST APIs
 
-```
+Managing application state
+
+Building dynamic UI components with JavaScript
+
+Implementing multi-page navigation without frameworks
+
+Using browser storage for persistence
+
+This project is ideal as a JavaScript practice project, technical exam, or portfolio showcase.
+
+🧠 Features
+
+Browse meals by category
+
+Search meals by name
+
+Filter meals by category or area
+
+View detailed meal information (ingredients & instructions)
+
+Navigate between multiple views (Meals, Products, Food Log)
+
+Track daily food intake
+
+Weekly nutrition overview
+
+Save data using LocalStorage
+
+Responsive and clean UI
+
+🛠️ Technologies Used
+
+HTML5
+
+CSS3
+
+JavaScript (ES6 Modules)
+
+TheMealDB API
+
+LocalStorage
+
+Plotly.js (weekly charts)
+
+📁 Project Structure
 starter/
-├── index.html          # Main HTML file (ready)
-├── README.md           # This file
+├── index.html
+├── README.md
 └── src/
     ├── css/
-    │   └── style.css   # Styles (ready)
+    │   └── style.css
     └── js/
-        ├── main.js           # Entry point (implement here)
+        ├── main.js
         ├── api/
-        │   └── mealdb.js     # API module (implement here)
+        │   └── mealdb.js
         ├── state/
-        │   └── appState.js   # State management (implement here)
+        │   └── appState.js
         └── ui/
-            └── components.js  # UI components (implement here)
-```
+            └── components.js
 
-## 🚀 Getting Started
+🔗 API Reference
 
-1. Open `index.html` in your browser to see the design
-2. Start implementing the JavaScript files
-3. Begin with `src/js/api/mealdb.js` - fetch data from the API
-4. Then update `src/js/main.js` to load and display data
+This project uses TheMealDB API (free, no API key required):
 
-## 🔗 API Reference
+Get all categories
 
-### TheMealDB API (Free, No API Key Required)
+Search meals by name
 
-Base URL: `https://www.themealdb.com/api/json/v1/1/`
+Filter meals by category or area
 
-| Endpoint | Description | Example |
-|----------|-------------|---------|
-| `/categories.php` | Get all categories | [Try it](https://www.themealdb.com/api/json/v1/1/categories.php) |
-| `/search.php?s={query}` | Search meals by name | [Try it](https://www.themealdb.com/api/json/v1/1/search.php?s=chicken) |
-| `/lookup.php?i={id}` | Get meal by ID | [Try it](https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772) |
-| `/filter.php?c={category}` | Filter by category | [Try it](https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood) |
-| `/filter.php?a={area}` | Filter by area/cuisine | [Try it](https://www.themealdb.com/api/json/v1/1/filter.php?a=Italian) |
-| `/random.php` | Get random meal | [Try it](https://www.themealdb.com/api/json/v1/1/random.php) |
+Get meal details by ID
 
-## ✅ Tasks to Complete
+Fetch random meals
 
-### Level 1: Basic Functionality
-- [ ] Fetch and display meal categories in `#categories-grid`
-- [ ] Fetch and display recipes in `#recipes-grid`
-- [ ] Hide the loading overlay when data is loaded
-- [ ] Update the recipe count text
+Base URL:
 
-### Level 2: Interactivity
-- [ ] Implement search functionality (use `#search-input`)
-- [ ] Filter recipes when clicking on a category
-- [ ] Show meal details when clicking on a recipe card
+https://www.themealdb.com/api/json/v1/1/
 
-### Level 3: Navigation
-- [ ] Implement sidebar navigation between pages
-- [ ] Create different views (Meals, Products, Food Log)
+▶️ How to Run the Project
 
-### Level 4: Advanced Features
-- [ ] Add loading states while fetching data
-- [ ] Implement error handling for API calls
-- [ ] Save favorites to localStorage
+Clone the repository:
 
-## 🎨 Key HTML Elements
+git clone https://github.com/Mkhaled-Ahmed/Nutriplan---Design
 
-### Meals Page
-| Element ID | Purpose |
-|------------|---------|
-| `#app-loading-overlay` | Loading screen (hide when ready) |
-| `#categories-grid` | Container for category cards |
-| `#recipes-grid` | Container for recipe cards |
-| `#search-input` | Search input field |
-| `#recipes-count` | Text showing recipe count |
 
-### Product Scanner Page
-| Element ID | Purpose |
-|------------|---------|
-| `#products-section` | Product scanner page container (toggle display) |
-| `#product-search-input` | Product name search input |
-| `#barcode-input` | Barcode number input |
-| `#search-product-btn` | Product search button |
-| `#lookup-barcode-btn` | Barcode lookup button |
-| `#products-grid` | Container for product cards |
-| `#products-count` | Text showing products count |
-| `.nutri-score-filter` | Nutri-Score filter buttons |
+Open index.html in your browser
 
-### Food Log Page
-| Element ID | Purpose |
-|------------|---------|
-| `#foodlog-section` | Food log page container (toggle display) |
-| `#foodlog-date` | Current date display |
-| `#foodlog-today-section` | Today's nutrition summary |
-| `#logged-items-list` | Container for logged food items |
-| `#weekly-chart` | Weekly chart container (Plotly) |
-| `#clear-foodlog` | Clear all logged items button |
-| `.quick-log-btn` | Quick action buttons |
+No build tools or dependencies required
 
-## 💡 Tips
+🧩 Application Views
 
-1. **Start Simple**: First just fetch and log data to console
-2. **Use Modules**: The project uses ES6 modules (`type="module"`)
-3. **Check Console**: Look for TODO messages and errors
-4. **Inspect Design**: The skeleton loaders show the expected card layout
-5. **Navigation**: Use `style.display = "none"` or `style.display = ""` to show/hide sections
-6. **Page State**: Track current page in your app state for navigation
+Meals Page
 
-## 🔄 Navigation
+Categories
 
-To switch between pages, hide/show the relevant sections:
-- **Meals Page**: Show `#search-filters-section`, `#meal-categories-section`, `#all-recipes-section`
-- **Product Scanner**: Show `#products-section`
-- **Food Log**: Show `#foodlog-section`
+Recipes grid
+
+Search & filters
+
+Product Scanner Page
+
+Product lookup
+
+Nutri-score filtering
+
+Food Log Page
+
+Daily food log
+
+Nutrition summary
+
+Weekly progress chart
+
+Navigation is handled using JavaScript by toggling page sections.
+
+💡 Key Concepts Demonstrated
+
+Modular JavaScript architecture
+
+Separation of concerns (API, state, UI)
+
+DOM manipulation
+
+Event handling
+
+Async / Await & Fetch API
+
+Client-side routing logic
+
+Data persistence using LocalStorage
+
+👨‍💻 Author
+
+Mohamed Khaled
+Computer & Systems Engineer
+
+GitHub:
+https://github.com/Mkhaled-Ahmed
+
+📌 Notes
+
+UI/UX design is fully prepared
+
+JavaScript logic is the main focus
+
+Easily extensible for future features
+
+Suitable for interviews, exams, and portfolio projects
