@@ -133,7 +133,8 @@ NutriPlan leverages **TheMealDB** (Free Tier) to fetch real-time culinary data:
 **Mohamed Khaled** *Computer & Systems Engineer*
 
 * **GitHub:** [@Mkhaled-Ahmed](https://github.com/Mkhaled-Ahmed)
-* **LinkedIn:** [Your LinkedIn Profile]
+* **Live Demo:** [@Mkhaled-Ahmed](https://mkhaled-ahmed.github.io/Nutriplan/#all-recipes-section)
+* **LinkedIn:** [https://www.linkedin.com/in/mohammed-khaled7/]
 
 ---
 
