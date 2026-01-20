@@ -1,160 +1,109 @@
-🥗 NutriPlan
-Food, Nutrition & Fitness Planner (JavaScript Project)
+# 🥗 NutriPlan
 
-NutriPlan is a modern web application designed to help users explore meals, track daily nutrition, and build healthier eating habits.
-This project focuses on JavaScript fundamentals, API integration, and state-driven UI rendering, using a fully prepared UI design.
+**NutriPlan** is a modern, data-driven web application designed for comprehensive meal exploration and nutritional tracking. Built with vanilla JavaScript, this project demonstrates high-level proficiency in API integration, state management, and dynamic UI rendering without the need for external frameworks.
 
-🚀 Project Purpose
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow.svg)
+![CSS3](https://img.shields.io/badge/CSS3-Modern-blue.svg)
+![API](https://img.shields.io/badge/API-TheMealDB-green.svg)
 
-The main goal of NutriPlan is to practice and demonstrate:
+---
 
-Working with real-world REST APIs
+## 🚀 Project Overview
 
-Managing application state
+The core mission of NutriPlan is to bridge the gap between meal inspiration and health tracking. It serves as a robust practice model for building scalable, modular applications using **ES6 Modules** and **State-driven logic**.
 
-Building dynamic UI components with JavaScript
+### Key Technical Goals:
+* **Modular Architecture:** Implementing a clean "Separation of Concerns" (API, State, UI).
+* **Asynchronous Flow:** Mastering `Async/Await` and the `Fetch API` for real-time data retrieval.
+* **Client-Side Routing:** Handling multi-page navigation within a Single Page Application (SPA) structure.
+* **Data Persistence:** Utilizing `LocalStorage` to maintain user logs across browser sessions.
 
-Implementing multi-page navigation without frameworks
+---
 
-Using browser storage for persistence
+## 🧠 Core Features
 
-This project is ideal as a JavaScript practice project, technical exam, or portfolio showcase.
+* **Meal Discovery:** Browse meals by category, search by name, or filter by geographical area.
+* **Detailed Recipe Insights:** View complete ingredient lists, measurements, and cooking instructions.
+* **Dynamic Food Log:** Track daily intake and maintain a history of meals consumed.
+* **Visual Analytics:** Weekly nutrition overview powered by **Plotly.js** for data visualization.
+* **Product Scanner:** Interface for looking up products and Nutri-score filtering.
+* **Responsive UI:** A clean, mobile-friendly design that works across all screen sizes.
 
-🧠 Features
+---
 
-Browse meals by category
+## 🛠️ Technologies Used
 
-Search meals by name
+* **Language:** JavaScript (ES6 Modules)
+* **Styling:** CSS3 (Flexbox & Grid)
+* **Markup:** HTML5
+* **Data Source:** [TheMealDB API](https://www.themealdb.com/api.php)
+* **Charts:** Plotly.js
+* **Persistence:** Browser LocalStorage
 
-Filter meals by category or area
+---
 
-View detailed meal information (ingredients & instructions)
+## 📁 Project Structure
 
-Navigate between multiple views (Meals, Products, Food Log)
+The project follows a modular directory structure to ensure maintainability:
 
-Track daily food intake
-
-Weekly nutrition overview
-
-Save data using LocalStorage
-
-Responsive and clean UI
-
-🛠️ Technologies Used
-
-HTML5
-
-CSS3
-
-JavaScript (ES6 Modules)
-
-TheMealDB API
-
-LocalStorage
-
-Plotly.js (weekly charts)
-
-📁 Project Structure
+```text
 starter/
-├── index.html
-├── README.md
+├── index.html          # Main Entry Point
+├── README.md           # Project Documentation
 └── src/
-    ├── css/
+    ├── css/            # Stylesheets
     │   └── style.css
     └── js/
-        ├── main.js
-        ├── api/
-        │   └── mealdb.js
-        ├── state/
-        │   └── appState.js
-        └── ui/
-            └── components.js
+        ├── main.js     # App Initialization & Event Delegation
+        ├── api/        # API communication logic (mealdb.js)
+        ├── state/      # Global state management (appState.js)
+        └── ui/         # Reusable UI components (components.js)
+```
+---
 
-🔗 API Reference
+## 🚦 Getting Started
 
-This project uses TheMealDB API (free, no API key required):
+### Prerequisites
+No special environment or build tools are required—just a modern web browser.
 
-Get all categories
+### Installation & Usage
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Mkhaled-Ahmed/Nutriplan---Design.git](https://github.com/Mkhaled-Ahmed/Nutriplan---Design.git)
+    ```
+2.  **Navigate to the project folder:**
+    ```bash
+    cd Nutriplan---Design
+    ```
+3.  **Launch the app:**
+    Open `index.html` in your browser. (Using the "Live Server" extension in VS Code is recommended).
 
-Search meals by name
+---
 
-Filter meals by category or area
+## 🔗 API Reference
 
-Get meal details by ID
+NutriPlan leverages **TheMealDB** (Free Tier) to fetch real-time culinary data:
+* **Base URL:** `https://www.themealdb.com/api/json/v1/1/`
+* **Endpoints:** Search by name, filter by category, and lookup detailed meal IDs.
 
-Fetch random meals
+---
 
-Base URL:
+## 💡 Technical Highlights
 
-https://www.themealdb.com/api/json/v1/1/
+* **State-UI Synchronization:** The application UI updates automatically when the underlying `appState.js` changes.
+* **Event Delegation:** Efficiently handles user interactions on dynamically generated elements.
+* **Error Handling:** Implements robust `try-catch` blocks and loading states during API transitions.
 
-▶️ How to Run the Project
+---
 
-Clone the repository:
+## 👨‍💻 Author
 
-git clone https://github.com/Mkhaled-Ahmed/Nutriplan---Design
+**Mohamed Khaled** *Computer & Systems Engineer*
 
+* **GitHub:** [@Mkhaled-Ahmed](https://github.com/Mkhaled-Ahmed)
+* **LinkedIn:** [Your LinkedIn Profile]
 
-Open index.html in your browser
+---
 
-No build tools or dependencies required
-
-🧩 Application Views
-
-Meals Page
-
-Categories
-
-Recipes grid
-
-Search & filters
-
-Product Scanner Page
-
-Product lookup
-
-Nutri-score filtering
-
-Food Log Page
-
-Daily food log
-
-Nutrition summary
-
-Weekly progress chart
-
-Navigation is handled using JavaScript by toggling page sections.
-
-💡 Key Concepts Demonstrated
-
-Modular JavaScript architecture
-
-Separation of concerns (API, state, UI)
-
-DOM manipulation
-
-Event handling
-
-Async / Await & Fetch API
-
-Client-side routing logic
-
-Data persistence using LocalStorage
-
-👨‍💻 Author
-
-Mohamed Khaled
-Computer & Systems Engineer
-
-GitHub:
-https://github.com/Mkhaled-Ahmed
-
-📌 Notes
-
-UI/UX design is fully prepared
-
-JavaScript logic is the main focus
-
-Easily extensible for future features
-
-Suitable for interviews, exams, and portfolio projects
+## 📜 License
+This project is open-source and available under the [MIT License](LICENSE).
